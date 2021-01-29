@@ -91,3 +91,7 @@ async def write(event: SimpleBotEvent) -> str:
 
 # запускаем бота с игнорированием ошибок (не останавливаться даже при них)
 bot.run_forever()
+
+if __name__ == '__main__':
+	app.debug = True
+	app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
