@@ -2,7 +2,6 @@ from constants import BEGIN, END
 import random
 from db import connection
 import db
-import tempfile
 import datetime
 
 
