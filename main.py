@@ -210,3 +210,7 @@ async def send_voice_message(event, peer_id, text):
 
 
 bot.run_forever()
+
+if __name__ == '__main__':
+	app.debug = True
+	app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
